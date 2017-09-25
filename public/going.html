@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+<title>Document</title>
+
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBlMyGKeKgWHrjqAARoTZ8JcvA2naoyi6w",
+        authDomain: "event-planner-343.firebaseapp.com",
+        databaseURL: "https://event-planner-343.firebaseio.com",
+        projectId: "event-planner-343",
+        storageBucket: "event-planner-343.appspot.com",
+        messagingSenderId: "1034889455125"
+    };
+    firebase.initializeApp(config);
+</script>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark mb-3">
+                <a class="navbar-brand">Event Planner</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                            <li class="nav-item" id="homeLi">
+                                    <a class="nav-link" href="home.html">Events <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item " id="goingLi">
+                                    <a class="nav-link" href="going.html">Going</a>
+                                </li>
+                                <li class="nav-item " id="nGoingLi">
+                                    <a class="nav-link" href="ngoing.html">Not Going</a>
+                                </li>
+                                <li class="nav-item " id="myEvLi">
+                                    <a class="nav-link" href="myPlans.html">My Events</a>
+                                </li>
+                    </ul>
+                    <button class="btn btn-outline-secondary" onclick="window.open('index.html','_self')" type="button">Logout</button>
+        
+                </div>
+            </nav>
+
+            <div class="div col-9">
+                    <h1 class="display-4 mb-5" style="font-size: 48px; text-align: center">All Events you are Going to</h1>
+        
+                    <div class="container" id="eventDiv">
+                        
+                    </div>
+                </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+crossorigin="anonymous"></script>
+<script src="going.js"></script>
+</html>
